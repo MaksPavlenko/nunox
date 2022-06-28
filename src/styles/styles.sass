@@ -1,0 +1,103 @@
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+  
+@import './config'
+
+@import '../components/Layout/layout'
+@import '../components/Ui/Ui'
+
+
+
+/////////////// Pages ////////////
+
+@import '../components/Pages/Home/Home'
+@import '../components/Pages/Case/Case'
+
+
+
+/////////// Main Style ///////////
+
+html
+  width: 100%
+  max-width: 100%
+  // height: -webkit-fill-available
+  height: 100%
+  backface-visibility: hidden
+  background: $white
+  
+body
+  position: relative
+  width: 100%
+  max-width: 100%
+  min-height: 100vh
+  min-height: -webkit-fill-available
+  overflow-x: hidden
+  scroll-behavior: smooth
+  overscroll-behavior-y: none
+  // font-smooth: antialiased
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeSpeed
+  -webkit-text-rendering: optimizeSpeed
+  font-family: $main
+  background: $white
+  color: $black
+  font-size: 16px
+  overflow-x:hidden
+
+
+ul
+  padding: 0
+  margin: 0
+  li
+    list-style: none
+
+button
+  background-color: transparent
+  border: none
+  outline: none
+  padding: 0
+  &:focus, &:focus, &:active
+    outline: none
+
+a
+  outline: none
+  text-decoration: none
+  &:hover, &:focus, &:active
+    text-decoration: none
+
+p, h1, h2, h3, h4,
+  margin: 0
+
+.page-wrapper
+  width: 100%
+  padding: 0 40px
+  max-width: $page-wrapper
+  margin: 0 auto
+  @media screen and (max-width: 650px)
+    padding: 0 20px
+  // @include media-breakpoint-down(lg)
+  //   padding: 0 4%
+
+.section
+  padding-top: 150px  
+  padding-bottom: 150px
+  @media screen and ( max-width: $page-wrapper )
+    padding-top: calc( 30px + (150 - 30) * ((100vw - 320px) / (1200 - 320)))
+    padding-bottom: calc( 30px + (150 - 30) * ((100vw - 320px) / (1200 - 320)))
+
+
+.content-wrapper
+  width: 100%
+  max-width: 1920px
+  margin: 0 auto
+  padding: 0 11%
+  @include media-breakpoint-down(xl)
+    padding: 0 8%
+  @include media-breakpoint-down(lg)
+    padding: 0 11%
+  @include media-breakpoint-down(md)
+    padding: 0 6%
+
+
+  

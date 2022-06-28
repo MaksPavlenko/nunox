@@ -1,0 +1,30 @@
+@import './FooterLogo/FooterLogo'
+@import './FooterMenu/FooterMenu'
+@import './FooterServices/FooterServices'
+@import './FooterContacts/FooterContacts'
+
+.footer
+  padding: 90px 0
+  background: $black
+  color: $white
+
+.footer-items
+  display: grid
+  grid-template-columns: 3fr 3fr 3fr 3fr
+  gap: 20px
+  @media screen and (max-width: 960px)
+    grid-template-columns: 6fr 6fr
+    gap: 80px 20px
+  @include media-breakpoint-down(sm)
+    grid-template-columns: 1fr
+    gap: 60px
+
+.footer-marker
+  display: block
+  font-size: 14px
+  letter-spacing: 1px
+  font-weight: 600
+  text-transform: uppercase
+  color: #525252
+  margin-bottom: 14px
+  

@@ -1,0 +1,47 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+
+/////// FONTS ////////
+
+
+$main: 'Roboto', sans-serif
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: local($fname), url($furl) format('woff')
+		font-display: swap // Uncomment to initially display system fonts
+@include font('Roboto-example', normal, 300, '../fonts/Roboto-Light/Roboto-Light.woff2')
+@include font('Roboto-example', normal, 400, '../fonts/Roboto-Regular/Roboto-Regular.woff2')
+@include font('Roboto-example', normal, 500, '../fonts/Roboto-Medium/Roboto-Medium.woff2')
+@include font('Roboto-example', normal, 700, '../fonts/Roboto-Bold/Roboto-Bold.woff2')
+
+///////  COLORS ///////
+
+// $black: #2c2c2c
+$black: #000
+$gray: #9c9c9c
+$white: #fff
+$border: rgba($black, .15)
+
+//////// BORDERS ///////
+
+$solid: 1px solid $border
+
+
+//////// SIZES ///////
+
+$page-wrapper: 1200px
+
+//////// TRANSITIONS ///////
+
+$cubic: cubic-bezier(0.24, 0.4, 0, 1)
+
+//////// STYLE MIXINS /////////
+
+@mixin flex-center()
+  display: flex
+  align-items: center
+  justify-content: center
+
