@@ -122,6 +122,9 @@ export const query = graphql`
       descrIt
       descrEn
       link
+      facebook
+      instagram
+      site
       image {
         localFile {
           childImageSharp {
@@ -153,6 +156,7 @@ export const query = graphql`
             )
           }
         }
+        title
       }
     }
     locales: allLocale(filter: { language: { eq: $language } }) {

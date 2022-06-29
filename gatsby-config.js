@@ -10,6 +10,7 @@ module.exports = {
     title: `Nunox`,
     description: `Створюємо та розвиваємо бренди. Володіючи власними бізнесами ми пропонуємо підприємцям наш досвід.`,
     author: `@nunox`,
+    siteUrl: `https://www.nunox.co`,
   },
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
@@ -98,7 +99,7 @@ module.exports = {
     // {
     //   resolve: 'gatsby-plugin-sitemap',
     //   options: {
-    //     exclude: ['/**/404', '/**/404.html'],
+    //     excludes: ['/**/404', '/**/404.html'],
     //     query: `
     //       {
     //         site {
@@ -150,14 +151,7 @@ module.exports = {
     //   },
     // },
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: 'http://46.101.194.93:1337',
-    //     queryLimit: 1000, // Defaults to 100
-    //     singleTypes: [`home-page`, `about`, `contacts`],
-    //   },
-    // },
+
     {
       resolve: `gatsby-source-contentful`,
       options: {

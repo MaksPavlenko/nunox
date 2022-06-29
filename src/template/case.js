@@ -13,8 +13,6 @@ import {
 } from '../components/Pages/Case';
 
 const CasePage = (data) => {
-  console.log(data.data);
-
   const {
     seoTitleUa,
     seoTitleEn,

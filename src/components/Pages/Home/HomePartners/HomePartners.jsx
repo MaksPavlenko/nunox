@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../../../../hooks/useLanguage';
 import PropTypes from 'prop-types';
-import PartnersItem from './PartnersItem/PartnersItem';
+import { PartnersItem, PartnersItemLink } from './PartnersItem/PartnersItem';
 
 const HomePartners = ({ titleData, partnersData }) => {
   const { title_ua, title_en, title_it, title_ru } = titleData;
@@ -15,7 +15,24 @@ const HomePartners = ({ titleData, partnersData }) => {
 
       <div className="partners-items">
         {partnersData.map((item, index) => {
-          return <PartnersItem image={item.localFile} key={index} />;
+          if (item.title === 'firm') {
+            return (
+              <PartnersItemLink
+                image={item.localFile}
+                link={'https://firmbarbershop.com/'}
+                title={item.title}
+                key={index}
+              />
+            );
+          } else {
+            return (
+              <PartnersItem
+                image={item.localFile}
+                title={item.title}
+                key={index}
+              />
+            );
+          }
         })}
       </div>
     </section>

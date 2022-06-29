@@ -32,8 +32,6 @@ const Layout = ({ children }) => {
       render={(data) => (
         <div className="app-container">
           <Header menu={menuData} />
-          {console.log(data)}
-
           <main>{children}</main>
           <Footer
             menu={footerMenu}

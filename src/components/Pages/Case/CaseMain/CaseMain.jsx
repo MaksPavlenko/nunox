@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useLanguage } from '../../../../hooks/useLanguage';
 
 const CaseMain = ({ main }) => {
-  console.log(main);
   const {
     titleUa,
     titleEn,

@@ -26,7 +26,7 @@
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
-    "gatsby-plugin-sitemap": "^4.2.0",
+    "gatsby-plugin-sitemap": "^5.17.0",
     "gatsby-source-contentful": "^7.12.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-source-strapi": "^1.0.0",

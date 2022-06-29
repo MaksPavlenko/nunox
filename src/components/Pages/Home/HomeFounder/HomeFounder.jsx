@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useLanguage } from '../../../../hooks/useLanguage';
 
 import DefoultCards from '../../../Ui/DefoultCards/DefoultCards';
+import HomeFounderSocial from './HomeFounderSocial/HomeFounderSocial';
 
 const HomeFounder = ({ main, titleData }) => {
   const langToglle = useLanguage;
@@ -29,10 +30,11 @@ const HomeFounder = ({ main, titleData }) => {
             main.descrRu
           )}
         />
+        <HomeFounderSocial main={main} />
       </div>
-      <a href={main.link} target="blank" className="insta-link">
+      {/* <a href={main.link} target="blank" className="insta-link">
         Instagram
-      </a>
+      </a> */}
     </section>
   );
 };
