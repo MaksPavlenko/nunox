@@ -1,0 +1,98 @@
+[
+    {
+        "path": "/en/404.html",
+        "matchPath": "/en/404.html"
+    },
+    {
+        "path": "/en/dev-404-page/",
+        "matchPath": "/en/dev-404-page/"
+    },
+    {
+        "path": "/en/firmbarbershop/",
+        "matchPath": "/en/firmbarbershop/"
+    },
+    {
+        "path": "/en/hazehairdressingbar/",
+        "matchPath": "/en/hazehairdressingbar/"
+    },
+    {
+        "path": "/en/ulichnayaeda/",
+        "matchPath": "/en/ulichnayaeda/"
+    },
+    {
+        "path": "/en/using-typescript/",
+        "matchPath": "/en/using-typescript/"
+    },
+    {
+        "path": "/it/404.html",
+        "matchPath": "/it/404.html"
+    },
+    {
+        "path": "/it/dev-404-page/",
+        "matchPath": "/it/dev-404-page/"
+    },
+    {
+        "path": "/it/firmbarbershop/",
+        "matchPath": "/it/firmbarbershop/"
+    },
+    {
+        "path": "/it/hazehairdressingbar/",
+        "matchPath": "/it/hazehairdressingbar/"
+    },
+    {
+        "path": "/it/ulichnayaeda/",
+        "matchPath": "/it/ulichnayaeda/"
+    },
+    {
+        "path": "/it/using-typescript/",
+        "matchPath": "/it/using-typescript/"
+    },
+    {
+        "path": "/ru/404.html",
+        "matchPath": "/ru/404.html"
+    },
+    {
+        "path": "/ru/dev-404-page/",
+        "matchPath": "/ru/dev-404-page/"
+    },
+    {
+        "path": "/ru/firmbarbershop/",
+        "matchPath": "/ru/firmbarbershop/"
+    },
+    {
+        "path": "/ru/hazehairdressingbar/",
+        "matchPath": "/ru/hazehairdressingbar/"
+    },
+    {
+        "path": "/ru/ulichnayaeda/",
+        "matchPath": "/ru/ulichnayaeda/"
+    },
+    {
+        "path": "/ru/using-typescript/",
+        "matchPath": "/ru/using-typescript/"
+    },
+    {
+        "path": "/en/",
+        "matchPath": "/en/"
+    },
+    {
+        "path": "/it/",
+        "matchPath": "/it/"
+    },
+    {
+        "path": "/ru/",
+        "matchPath": "/ru/"
+    },
+    {
+        "path": "/en/404/",
+        "matchPath": "/en/*"
+    },
+    {
+        "path": "/it/404/",
+        "matchPath": "/it/*"
+    },
+    {
+        "path": "/ru/404/",
+        "matchPath": "/ru/*"
+    }
+]

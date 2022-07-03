@@ -16,21 +16,26 @@ import HomePartners from '../components/Pages/Home/HomePartners/HomePartners';
 import { homeStatic } from '../db/homeStatic';
 
 const IndexPage = (data) => {
-  // console.log(data.data);
+  console.log(data.data);
+  const {
+    titleUa,
+    titleEn,
+    titleIt,
+    titleRu,
+    descriptionUa,
+    descriptionEn,
+    descriptionIt,
+    descriptionRu,
+  } = data.data.contentfulHomeSeo;
   return (
     <Layout>
       <Seo
-        title={useLanguage(
-          'nunox: маркетингове агентство: Київ, Україна. (uk)',
-          'nunox: marketing agency, Kyiv, Ukraine',
-          'nunox: agenzia di marketing: Kiev, Ucraina',
-          'nunox: маркетинговое агентство: Киев, Украина'
-        )}
+        title={useLanguage(titleUa, titleEn, titleIt, titleRu)}
         description={useLanguage(
-          'Створюємо та розвиваємо бренди. Володіючи власними бізнесами ми пропонуємо підприємцям наш досвід.',
-          'We create and develop brands. By owning our own businesses, we offer entrepreneurs our experience.',
-          'Creiamo e sviluppiamo marchi. Possedendo le nostre attività, offriamo agli imprenditori la nostra esperienza.',
-          'Создаем и развиваем бренды. Владея собственными бизнесами, мы предлагаем предпринимателям наш опыт.'
+          descriptionUa,
+          descriptionEn,
+          descriptionIt,
+          descriptionRu
         )}
       />
       <div className="page-wrapper">
@@ -62,6 +67,16 @@ export default IndexPage;
 
 export const query = graphql`
   query($language: String!) {
+    contentfulHomeSeo {
+      titleUa
+      titleEn
+      titleIt
+      titleRu
+      descriptionUa
+      descriptionEn
+      descriptionIt
+      descriptionRu
+    }
     contentfulHomeMain {
       titleEn {
         titleEn

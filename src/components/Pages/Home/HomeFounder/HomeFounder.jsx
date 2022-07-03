@@ -32,9 +32,6 @@ const HomeFounder = ({ main, titleData }) => {
         />
         <HomeFounderSocial main={main} />
       </div>
-      {/* <a href={main.link} target="blank" className="insta-link">
-        Instagram
-      </a> */}
     </section>
   );
 };
