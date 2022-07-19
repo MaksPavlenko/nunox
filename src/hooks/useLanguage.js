@@ -6,7 +6,7 @@ export const useLanguage = (ukr, eng, itl, rus) => {
     i18n: { language },
   } = useContext(I18nContext);
 
-  if (language === 'ua') {
+  if (language === 'uk') {
     return ukr;
   } else if (language === 'ru') {
     return rus;
