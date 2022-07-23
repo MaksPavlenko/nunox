@@ -14,6 +14,25 @@ const makeRequest = (graphql, request) =>
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
+  const { createRedirect } = actions;
+  createRedirect({
+    fromPath: 'https://www.nunox.co/it/firm',
+    toPath: 'https://www.nunox.co/it/firmbarbershop/',
+    isPermanent: true,
+    force: true,
+  });
+  createRedirect({
+    fromPath: 'https://www.nunox.co/en/haze',
+    toPath: 'https://www.nunox.co/en/hazehairdressingbar/',
+    isPermanent: true,
+    force: true,
+  });
+  createRedirect({
+    fromPath: 'https://www.nunox.co/en/street-food',
+    toPath: 'https://www.nunox.co/en/ulichnayaeda/',
+    isPermanent: true,
+    force: true,
+  });
 
   const generatePages = makeRequest(
     graphql,
