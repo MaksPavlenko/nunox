@@ -98,14 +98,13 @@ module.exports = {
         ],
       },
     },
-    // `gatsby-plugin-advanced-sitemap`,
-    // `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        excludes: ['/**/404', '/**/404.html'],
-      },
-    },
+    `gatsby-plugin-advanced-sitemap`,
+    // {
+    //   resolve: 'gatsby-plugin-sitemap',
+    //   options: {
+    //     excludes: ['/**/404', '/**/404.html'],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
