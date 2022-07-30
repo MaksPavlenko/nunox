@@ -11,7 +11,7 @@ module.exports = {
     title: `Nunox`,
     description: `Створюємо та розвиваємо бренди. Володіючи власними бізнесами ми пропонуємо підприємцям наш досвід.`,
     author: `@nunox`,
-    siteUrl: `https://www.nunox.co`,
+    siteUrl: siteUrl,
   },
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
@@ -76,7 +76,7 @@ module.exports = {
         defaultLanguage: defaultLanguage,
         fallbackLanguage: 'en',
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://www.nunox.co`,
+        siteUrl: siteUrl,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
