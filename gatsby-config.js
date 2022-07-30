@@ -99,7 +99,7 @@ module.exports = {
       },
     },
     // `gatsby-plugin-advanced-sitemap`,
-    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
