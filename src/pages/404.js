@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { useLanguage } from '../hooks/useLanguage';
 import Layout from '../components/Layout/layout';
 import Seo from '../components/seo';
+import NotFound from '../components/Pages/NotFound/NotFound';
 
 const NotFoundPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const NotFoundPage = () => (
         '404: Страницу не найдено'
       )}
     />
+    <NotFound />
   </Layout>
 );
 

@@ -1,0 +1,40 @@
+.not-found
+  height: 100%
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.not-found__content
+  text-align: center
+
+.not-found__marker
+  display: block
+  font-size: 280px
+  line-height: 100%
+  font-weight: 700
+  @media screen and ( max-width: $page-wrapper )
+    font-size: calc( 120px + (280 - 120) * ((100vw - 320px) / (1200 - 320)))
+
+.not-found__title
+  font-size: 28px
+  line-height: 100%
+  margin-bottom: 40px
+  @media screen and ( max-width: $page-wrapper )
+    font-size: calc( 16px + (28 - 16) * ((100vw - 320px) / (1200 - 320)))
+
+
+.not-found__link
+  @media (any-hover: hover)
+    &:hover
+      .not-found__link--title
+        color: #9c9c9c
+
+.not-found__link--title
+  font-size: 13px
+  line-height: 16px
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 1px
+  transition: color .3s ease-in-out
+  color: $black
