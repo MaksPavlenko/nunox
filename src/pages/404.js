@@ -1,11 +1,19 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { useLanguage } from '../hooks/useLanguage';
 import Layout from '../components/Layout/layout';
 import Seo from '../components/seo';
 
 const NotFoundPage = () => (
   <Layout>
-    <Seo title="404: Not found" />
+    <Seo
+      title={useLanguage(
+        '404: Сторінку не знайдено',
+        '404: Page not found',
+        '404 pagina non trovata',
+        '404: Страницу не найдено'
+      )}
+    />
   </Layout>
 );
 

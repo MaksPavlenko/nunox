@@ -10,7 +10,7 @@ const DefoultCards = ({ image, title, descr }) => {
   return (
     <div className="cards-wrapper">
       <div className="card-image">
-        <GatsbyImage image={img} alt="img" />
+        <GatsbyImage image={img} alt="Cards cover" />
       </div>
       <div className="cards-bottom">
         <div className="card-title">{title}</div>
